@@ -1,0 +1,17 @@
+Create step
+1. ng new my-app
+   > No for routing.
+2. cd my-app/src/app
+   md state
+4. ng g interface state-manager
+    インターフェース　新規
+   ng g service   state-update
+　  再利用
+   ng g service   state-program
+　  再利用
+   ng g class     state-array  
+    再利用
+　 
+5. 編集 app.component.html
+
+6. testControl.psgg コピー と Beta7対応
