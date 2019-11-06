@@ -2,6 +2,7 @@
 import { Sub001Control } from "./Sub001Control";
 import { StateProgramService } from './../state-program.service';
 import { Sub002Control } from "./Sub002Control";
+import { Sub003Control } from "./Sub003Control";
 
 export class MainControl implements StateManager{
 
@@ -141,7 +142,7 @@ export class MainControl implements StateManager{
         else if (this.sp.curEvent === 'test_6') { this.Goto( this.S_TEST0006 ); }
         else if (this.sp.curEvent === 'test_7') { this.Goto( this.S_TEST0007 ); }
         else if (this.sp.curEvent === 'test_8') { this.Goto( this.S_TEST0008 ); }
-        else if (this.sp.curEvent === 'test_9') { this.Goto( this.S_TEST0006 ); }
+        else if (this.sp.curEvent === 'test_9') { this.Goto( this.S_TEST0009 ); }
         else if (this.sp.curEvent === 'test_10') { this.Goto( this.S_TEST0006 ); }
         else if (this.sp.curEvent === 'test_11') { this.Goto( this.S_TEST0011 ); }
         else if (this.sp.curEvent === 'test_12') { this.Goto( this.S_LOOP1 ); }
@@ -372,6 +373,23 @@ export class MainControl implements StateManager{
             // this.curstatecmt  = '';
             console.log('test008 program');
             const sc = new Sub002Control();
+            sc.SetupSp(this.sp);
+            sc.start();
+            this.sp.addStateManager(sc);
+        }
+        if (!this.HasNextState()) {
+            this.Goto(this.S_BACKTO_BUTTON);
+        }
+    }
+    /*
+        S_TEST0009
+    */
+    S_TEST0009(bFirst: boolean) : void {
+        if (bFirst) {
+            this.curstatename = 'S_TEST0009';
+            // this.curstatecmt  = '';
+            console.log('test009 program');
+            const sc = new Sub003Control();
             sc.SetupSp(this.sp);
             sc.start();
             this.sp.addStateManager(sc);

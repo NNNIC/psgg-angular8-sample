@@ -13,9 +13,9 @@ check_excel_writable=no
 
 sheet=state-chart
 nameid_list=,n001,n002,n003,n004,n019,n005,,n006,,n007,,n008,n009,n00a,n00b,,n00c,n00d,,n00e,n00f,,n010,n011,,n012,n013,n014,n015,,n01a,n01b,n01c,n01d,n016,n017,n018,,
-stateid_list=,,,,s0001,s0002,s0005,s0006,s0007,s0004,s0009,s0008,s000a,s000b,s000d,s000c,s000f,s000e,s0010,s0011,s0012,s0013,s0014,s0015
+stateid_list=,,,,s0001,s0002,s0005,s0006,s0007,s0004,s0009,s0008,s000a,s000b,s000d,s000c,s000f,s000e,s0010,s0011,s0012,s0013,s0014,s0015,,s0016
 max_name_id=29
-max_state_id=21
+max_state_id=22
 [id_name_dic]
 n001=thumbnail
 n002=state
@@ -69,6 +69,7 @@ s0012=S_ALERT1
 s0013=S_TEST0007
 s0014=S_BACKTO_BUTTON
 s0015=S_TEST0008
+s0016=S_TEST0009
 
 
 [s0001]
@@ -96,7 +97,7 @@ brelseifc(S_TEST0005);
 brelseifc(S_TEST0006);
 brelseifc(S_TEST0007);
 brelseifc(S_TEST0008);
-brelseifc(S_TEST0006);
+brelseifc(S_TEST0009);
 brelseifc(S_TEST0006);
 brelseifc(S_TEST0011);
 brelseif(S_LOOP1);
@@ -481,6 +482,28 @@ n016=@@@
 n017=635,854
 n018=100021
 
+[s0016]
+n001=(bitmap)
+n002=S_TEST0009
+n003=
+n005=S_BACKTO_BUTTON
+n009=@@@
+console.log('test009 program');
+const sc = new Sub003Control();
+sc.SetupSp(this.sp);
+sc.start();
+this.sp.addStateManager(sc);
+@@@
+
+n016=@@@
+/
+(100,100)
+
+@@@
+
+n017=629,954
+n018=100022
+
 
 
 ------#======*<Guid(70C5A739-223A-457D-8AEE-1A0E2050D5AE)>*======#------
@@ -488,7 +511,7 @@ n018=100021
 sheet=config
 
 ###VARIOUS-CONTENTS-BEGIN###
-; The setting was created automatically. 2019/11/06 21:38:17
+; The setting was created automatically. 2019/11/06 22:05:39
 ; * pssgEditor version : 0.61.41640.84b9998d3ecb2076fe5ce5f3a9a5018d44637bf4
 psggfile=@@@
 MainControl.psgg
@@ -515,13 +538,13 @@ state_location_list=@@@
 
 @@@
 nodegroup_comment_list=@@@
-[{"Key":"\/","Value":""}]
+[{"Key":"\/","Value":"This is the root"}]
 @@@
 nodegroup_pos_list=@@@
 [{"Key":"\/","Value":{"x":0,"y":0}}]
 @@@
 fillter_state_location_list=@@@
-[{"Key":"\/","Value":[{"Key":"S_START","Value":{"x":21,"y":72}},{"Key":"S_END","Value":{"x":282,"y":38}},{"Key":"S_BUTTONS","Value":{"x":138,"y":636}},{"Key":"S_TEST0001","Value":{"x":610,"y":61}},{"Key":"S_TEST0002","Value":{"x":613,"y":176}},{"Key":"S_TEST0003","Value":{"x":615,"y":301}},{"Key":"S_TEST0004","Value":{"x":615,"y":421}},{"Key":"S_TEST0005","Value":{"x":624,"y":535}},{"Key":"S_TEST0006","Value":{"x":623,"y":644}},{"Key":"S_TEST0011","Value":{"x":681,"y":1415}},{"Key":"S_SUBSTART1","Value":{"x":933,"y":1487}},{"Key":"S_TEST0007","Value":{"x":631,"y":748}},{"Key":"S_RETURN1","Value":{"x":1382,"y":1489}},{"Key":"S_LOOP1","Value":{"x":686,"y":1559}},{"Key":"S_SUBSTART2","Value":{"x":947,"y":1618}},{"Key":"S_RETURN2","Value":{"x":1380,"y":1632}},{"Key":"S_TEST0008","Value":{"x":635,"y":854}},{"Key":"S_ALERT","Value":{"x":1143,"y":1491}},{"Key":"S_ALERT1","Value":{"x":1165,"y":1630}},{"Key":"S_BACKTO_BUTTON","Value":{"x":135,"y":572}}]}]
+[{"Key":"\/","Value":[{"Key":"S_START","Value":{"x":21,"y":72}},{"Key":"S_END","Value":{"x":282,"y":38}},{"Key":"S_BUTTONS","Value":{"x":138,"y":636}},{"Key":"S_TEST0001","Value":{"x":610,"y":61}},{"Key":"S_TEST0002","Value":{"x":613,"y":176}},{"Key":"S_TEST0003","Value":{"x":615,"y":301}},{"Key":"S_TEST0004","Value":{"x":615,"y":421}},{"Key":"S_TEST0005","Value":{"x":624,"y":535}},{"Key":"S_TEST0006","Value":{"x":623,"y":644}},{"Key":"S_TEST0011","Value":{"x":681,"y":1415}},{"Key":"S_SUBSTART1","Value":{"x":933,"y":1487}},{"Key":"S_TEST0007","Value":{"x":631,"y":748}},{"Key":"S_RETURN1","Value":{"x":1382,"y":1489}},{"Key":"S_LOOP1","Value":{"x":686,"y":1559}},{"Key":"S_SUBSTART2","Value":{"x":947,"y":1618}},{"Key":"S_RETURN2","Value":{"x":1380,"y":1632}},{"Key":"S_TEST0008","Value":{"x":635,"y":854}},{"Key":"S_ALERT","Value":{"x":1143,"y":1491}},{"Key":"S_ALERT1","Value":{"x":1165,"y":1630}},{"Key":"S_BACKTO_BUTTON","Value":{"x":135,"y":572}},{"Key":"S_TEST0009","Value":{"x":629,"y":954}}]}]
 @@@
 linecolor_data=@@@
 [{"color":{"knownColor":0,"name":null,"state":2,"value":4285493103},"pattern":"BACKTO_"}]
