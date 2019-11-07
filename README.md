@@ -22,7 +22,7 @@ anguler6
 StateGo Beta7は近々リリース予定です。
 
 
-This sample has been ported from [psgg-angular-sample](https://github.com/NNNIC/psgg-angular-sample), and has been adopted to StataGo Beta7 sample.
+This sample has been ported from [psgg-angular-sample](https://github.com/NNNIC/psgg-angular-sample), and has been adopted to StataGo Beta7 Starter Kit.
 
 StateGo Beta7 will be released soon.
 
