@@ -19,6 +19,9 @@ anguler6
 
 [psgg-angular-sample](https://github.com/NNNIC/psgg-angular-sample)を Angular8用に移植し、且つ、StateGo Beta7からのスタートキットに対応させたサンプルになります。
 
+StateGo Beta7は近々リリース予定です。
+
+
 This sample has been ported from [psgg-angular-sample](https://github.com/NNNIC/psgg-angular-sample), and has been adopted to StataGo Beta7 sample.
 
 StateGo Beta7 will be released soon.
