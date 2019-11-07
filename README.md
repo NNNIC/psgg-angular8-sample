@@ -27,4 +27,4 @@ StateGo Beta7 will be released soon.
 
 See http://angular.programanic.com/
 
-![]
+![](https://raw.githubusercontent.com/NNNIC/psgg-angular8-sample/master/wiki/running.gif)
