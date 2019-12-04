@@ -4,7 +4,7 @@ StateGo Angluar8 Sample
 ## Environment
 
 Windows 7/8/10  
-anguler8
+anguler8  
 [StateGo](https://statego.programanic.com/index-e.html)
 
 ## Implementation example
